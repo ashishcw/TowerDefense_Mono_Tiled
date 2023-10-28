@@ -1,0 +1,38 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:D:\Game Work\Sprites\Zelda Like Tile Set World Map for TILED\MonoGame.Extended-develop\src\cs\MonoGame.Extended.Content.Pipeline\bin\net6.0\MonoGame.Extended.Content.Pipeline.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Map/Base.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:Map/Base.tsx
+
+#begin Map/FirstTestMap-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Map/FirstTestMap-2.tmx
+
+#begin Map/Overworld.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Map/Overworld.png
+
