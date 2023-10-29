@@ -62,8 +62,7 @@ namespace RPG_Demo.Managers.Camera
             Vector2 _worldPosition = Vector2.One;
             if (mouseState.LeftButton == ButtonState.Pressed)
             {
-                _worldPosition = this.camera.ScreenToWorld(new Vector2(mouseState.X, mouseState.Y));
-                Debug.WriteLine(_worldPosition.ToString());
+                _worldPosition = this.camera.ScreenToWorld(new Vector2(mouseState.X, mouseState.Y));                
             }   
             
             return _worldPosition;
