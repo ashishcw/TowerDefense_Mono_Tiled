@@ -21,7 +21,7 @@ namespace RPG_Demo.GameObjects
         public AnimatedSprite animatedSprite;
         public Rectangle rectangle;
         
-        //public RectangleF Bounds => Sprite.GetBoundingRectangle(Position, 0f, Vector2.One);
+        public RectangleF Bounds => Sprite.GetBoundingRectangle(Position, 0f, Vector2.One);
 
         public GameObjects(Vector2 pos, Texture2D texture2D, Rectangle rect)
         {

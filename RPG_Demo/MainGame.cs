@@ -35,6 +35,13 @@ namespace RPG_Demo
             base.Initialize();
         }
 
+        protected override void UnloadContent()
+        {   
+            base.UnloadContent();
+            this._spriteBatch.Dispose();
+            Globals.SpriteBatch.Dispose();
+        }        
+
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
